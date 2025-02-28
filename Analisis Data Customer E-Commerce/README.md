@@ -41,11 +41,11 @@ This project is a data analysis and visualization project focused on e-commerce 
 ## Installation
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/NovrianPratama/data-analyst-dicoding.git
+git clone https://github.com/NovrianPratama/personal-project.git
 ```
 2. Go to the project directory
 ```
-cd data-analyst-dicoding
+cd "Analisis Data Customer E-Commerce"
 ```
 3. Install the required Python packages by running:
 ```
@@ -61,7 +61,7 @@ cd Dashboard
 streamlit run dashboard_customer.py
 ```
 
-Access the dashboard in your web browser at `http://localhost:8501`.
+Access the dashboard in your web browser at `http://localhost:8502`.
 
 ### Data Analysis
 
