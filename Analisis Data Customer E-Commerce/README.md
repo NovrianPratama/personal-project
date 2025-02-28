@@ -17,30 +17,44 @@ This project is a data analysis and visualization project focused on e-commerce 
 ## Project Structure
 
 ```
-├── dashboard.py          # Main Streamlit dashboard script
-├── data/                 # Directory containing raw CSV data files
-├── notebook.ipynb        # Jupyter Notebook for data analysis
-├── requirements.txt      # Dependencies for the project
-├── README.md             # Documentation file
+├── Dashboard/
+│   ├── 3d Novri.jpg                 # Image asset
+│   ├── dashboard_customer.py        # Streamlit dashboard script
+│
+├── E-Commerce Dataset/
+│   ├── customers_dataset.csv        # Customer data
+│   ├── geolocation_dataset.csv      # Location data
+│   ├── order_items_dataset.csv      # Order details
+│   ├── order_payments_dataset.csv   # Payment details
+│   ├── order_reviews_dataset.csv    # Customer reviews
+│   ├── orders_dataset.csv           # Order information
+│   ├── product_category_name.csv    # Product categories
+│   ├── products_dataset.csv         # Product details
+│   ├── sellers_dataset.csv          # Seller details
+│
+├── Analisis_data_eCommerce.ipynb     # Jupyter Notebook for data analysis
+├── all_dataset.csv                   # Combined dataset
+├── README.md                          # Project documentation
+├── Requirements.txt                    # Dependencies for the project
 ```
 
 ## Installation
 
-### Setup Environment - Anaconda
+1. Clone this repository to your local machine:
 
-```sh
-conda create --name ecom-analysis python=3.9
-conda activate ecom-analysis
-pip install -r requirements.txt
+```
+git clone https://github.com/NovrianPratama/personal-project.git
 ```
 
-### Setup Environment - Shell/Terminal
+2. Go to the project directory
 
-```sh
-mkdir ecom_analysis_project
-cd ecom_analysis_project
-pipenv install
-pipenv shell
+```
+cd "Analisis Data Customer E-Commerce"
+```
+
+3. Install the required Python packages by running:
+
+```
 pip install -r requirements.txt
 ```
 
@@ -49,14 +63,15 @@ pip install -r requirements.txt
 ### Running the Streamlit Dashboard
 
 ```sh
-streamlit run dashboard.py
+cd Dashboard
+streamlit run dashboard_customer.py
 ```
 
-Access the dashboard in your web browser at `http://localhost:8501`.
+Access the dashboard in your web browser at `http://localhost:8502`.
 
 ### Data Analysis
 
-1. **Data Wrangling**: Use `notebook.ipynb` to clean and preprocess the data.
+1. **Data Wrangling**: Use `Analisis_data_eCommerce.ipynb` to clean and preprocess the data.
 2. **Exploratory Data Analysis (EDA)**: Perform RFM segmentation, sales analysis, and delivery performance evaluation.
 3. **Visualization**: Insights are presented interactively in the Streamlit dashboard.
 
@@ -66,4 +81,4 @@ This project uses the E-Commerce Public Dataset from [Dicoding's Data Analysis C
 
 ---
 
-📌 **Note:** Feel free to contribute and enhance this project by adding more features and insights!
+📌 **Note:** Feel free to contribute and enhance this project by adding more features and insights! 🚀

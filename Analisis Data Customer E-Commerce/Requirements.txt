@@ -1,9 +1,5 @@
-Library:
-
-pandas
-numpy
-matplotlib
-babel
-urllib
-seaborn 
-streamlit
+Babel==2.17.0
+matplotlib==3.10.1
+pandas==2.2.3
+seaborn==0.13.2
+streamlit==1.42.1

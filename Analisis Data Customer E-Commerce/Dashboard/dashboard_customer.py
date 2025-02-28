@@ -7,13 +7,12 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # Load data
-df = pd.read_csv(r'D:\File Belajar\Belajar Data\Machine Learning\DBS Course\Analisis Data Customer E-Commerce\all_dataset.csv', parse_dates=['order_purchase_timestamp', 'order_delivered_customer_date', 'order_estimated_delivery_date'])
+df = pd.read_csv('all_dataset.csv', parse_dates=['order_purchase_timestamp', 'order_delivered_customer_date', 'order_estimated_delivery_date'])
 
 # Convert date column
 df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
 df['order_delivered_customer_date'] = pd.to_datetime(df['order_delivered_customer_date'])
 df['order_estimated_delivery_date'] = pd.to_datetime(df['order_estimated_delivery_date'])
-
 
 # Set page title
 st.title("Dashboard Analisis Data Pelanggan")
@@ -21,7 +20,7 @@ st.title("Dashboard Analisis Data Pelanggan")
 # Sidebar navigation
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image(r"D:\File Belajar\Belajar Data\Machine Learning\DBS Course\Analisis Data Customer E-Commerce\Dashboard\3d Novri.jpg")
+    st.image("3d_img.jpg")
     st.sidebar.title("Menu")
     menu = st.sidebar.radio("Pilih Analisis:", ["Pendapatan Berdasarkan Lokasi", "Penjualan Berdasarkan Kategori", "Keterlambatan Pengiriman", "Analisis RFM"])
 
