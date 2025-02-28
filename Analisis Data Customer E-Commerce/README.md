@@ -55,6 +55,7 @@ cd "Analisis Data Customer E-Commerce"
 3. Install the required Python packages by running:
 
 ```
+>>>>>>> 580b68c6b69f930b1354a261f4db127485977d39
 pip install -r requirements.txt
 ```
 
